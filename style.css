@@ -1,0 +1,39 @@
+/* --- Profile Image Styling --- */
+.profile-container {
+    margin-bottom: 20px;
+}
+
+.profile-headshot {
+    width: 150px;           /* Size of your headshot */
+    height: 150px;
+    border-radius: 50%;     /* Makes it a perfect circle */
+    object-fit: cover;      /* Prevents image stretching */
+    border: 4px solid white; /* Professional white border */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.profile-headshot:hover {
+    transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+/* Adjusting Hero Title for better spacing with image */
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-top: 10px;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Mobile Tweak */
+@media (max-width: 768px) {
+    .profile-headshot {
+        width: 120px;
+        height: 120px;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
