@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endris | Trade Finance Professional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-blue: #0a2540;
+            --accent-blue: #0070f3;
+            --text-dark: #333;
+            --text-light: #666;
+            --bg-light: #f9fafb;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        header {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-blue);
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 4rem 0;
+        }
+
+        /* About Section Styles */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-content h2 {
+            color: var(--primary-blue);
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .about-content h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--accent-blue);
+            margin-top: 10px;
+        }
+
+        .about-text p {
+            margin-bottom: 1.2rem;
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        .highlight {
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+
+        .skills-tag-container {
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #eef2ff;
+            color: var(--accent-blue);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dbeafe;
+        }
+
+        footer {
+            background: var(--primary-blue);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .about-content h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">ENDRIS</div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about" class="container">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="https://via.placeholder.com/400x500" alt="Endris Profile" style="width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <div class="about-text">
+                    <p>I am <span class="highlight">Endris</span>, a dedicated Finance Professional specializing in Trade Finance and Risk Assessment. I graduated from <span class="highlight">Rift Valley University in 2021</span> with a Bachelor of Arts degree in Accounting, where I developed a strong foundation in financial reporting and IFRS standards.</p>
+                    
+                    <p>Immediately following my studies, I entered the banking sector, gaining over three years of experience across both international and Islamic banking frameworks. I began my professional journey at <span class="highlight">ZamZam Bank S.C.</span>, where I built a track record of integrity and ethical customer service. Currently, I serve as a Trade Finance Professional at <span class="highlight">Euro Exim Bank</span>, where I navigate the complexities of trade instruments to provide secure, scalable financial solutions for global clients.</p>
+                    
+                    <p>My expertise lies in bridging the gap between complex financial regulations and seamless global trade. I am deeply committed to risk mitigation and operational excellence, utilizing modern accounting frameworks and banking software to streamline workflows.</p>
+                    
+                    <p>Beyond traditional finance, I am digitally literate and passionate about innovation, actively integrating <span class="highlight">AI and data science tools—including Python and machine learning</span>—to drive organizational growth and stay ahead of the evolving financial landscape.</p>
+                </div>
+
+                <div class="skills-tag-container">
+                    <span class="skill-tag">Trade Finance</span>
+                    <span class="skill-tag">Risk Assessment</span>
+                    <span class="skill-tag">IFRS</span>
+                    <span class="skill-tag">Islamic Banking</span>
+                    <span class="skill-tag">Python & ML</span>
+                    <span class="skill-tag">Financial Analysis</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Endris. All Rights Reserved.</p>
+        <p>Finance Professional | Trade Finance & Risk Assessment</p>
+    </footer>
+
+</body>
+</html>
